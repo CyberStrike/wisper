@@ -1,4 +1,11 @@
 Wisper::Application.configure do
+
+  require 'pusher'
+
+  Pusher.app_id = '73794'
+  Pusher.key    = '937f2532c4510812fd7b'
+  Pusher.secret = '838f1a206f907bdd5a9d'
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on

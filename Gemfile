@@ -11,6 +11,12 @@ gem 'devise'
 
 group :assets do
 
+# Lose some weight
+  gem 'slim-rails'
+
+# Pull ourselves up by our
+  gem 'bootstrap-sass'
+
 # Use SCSS for stylesheets
   gem 'sass-rails', '~> 4.0.0'
 
@@ -22,9 +28,6 @@ group :assets do
 
 # Use jquery as the JavaScript library
   gem 'jquery-rails'
-
-# Lose some weight
-  gem 'slim-rails'
 
 end
 
@@ -44,6 +47,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Use debugger
+gem 'debugger', group: [:development, :test]
+
+# Use Pusher
+gem 'pusher'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
@@ -53,6 +62,3 @@ end
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
-# Use debugger
-
-gem 'debugger', group: [:development, :test]
